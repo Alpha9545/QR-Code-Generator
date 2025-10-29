@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="user-data">
+            <h2>QR Code Generator</h2>
+            <input type="text" class="user-msg" name="info" placeholder="Enter your message..." required>
+
+            <!-- QR Code Size -->
+            <label for="size">Select Size:</label>
+            <select id="size" class="size-select">
+                <option value="100x100">100x100</option>
+                <option value="200x200" selected>200x200 (Default)</option>
+                <option value="300x300">300x300</option>
+                <option value="400x400">400x400</option>
+            </select>
+
+            <!-- QR Code Color -->
+            <label for="color">Select QR Color:</label>
+            <input type="color" id="color" value="#000000">
+
+            <!-- Background Color -->
+            <label for="bgcolor">Select Background Color:</label>
+            <input type="color" id="bgcolor" value="#ffffff">
+
+            <button class="generate-qr-code">Generate QR Code</button>
+        </div>
+        
+        <div class="qr-canvas">
+            <h2>QR Code</h2>
+            <div class="loading" style="display: none;">Generating QR...</div>
+            <img src="" alt="QR Code" class="qr-image" style="display: none;">
+            <button class="download-qr-code" style="display: none;">Download QR Code</button>
+        </div>
+    </div>
+
+    <a href="logout.php" class="btn-out">Log 1 out</a>
+    <script src="index.js"></script>
+</body>
+</html>
