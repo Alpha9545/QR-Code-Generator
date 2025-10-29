@@ -29,7 +29,7 @@ Admin can view QR generation history.
 
 ## 📸 Screenshots
 
-![Admin Page](admmin.jpg)
+![Admin Page](admin.jpg)
 ![QR Generator](qr.png)
 
 
